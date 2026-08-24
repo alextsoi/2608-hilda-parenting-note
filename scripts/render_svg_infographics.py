@@ -48,6 +48,32 @@ def wrap(text: str, max_units: float) -> list[str]:
     return lines or [""]
 
 
+def text_el(
+    x: float,
+    cy: float,
+    content: str,
+    *,
+    size: int,
+    fill: str,
+    weight: str | None = None,
+    anchor: str | None = None,
+) -> str:
+    """`cy` is the optical centre. Pixel dy is more stable than em in <img> SVG."""
+    dy = round(size * 0.36)
+    attrs = [
+        f'x="{x}"',
+        f'y="{cy}"',
+        f'dy="{dy}"',
+        f'fill="{fill}"',
+        f'font-size="{size}"',
+    ]
+    if weight:
+        attrs.append(f'font-weight="{weight}"')
+    if anchor:
+        attrs.append(f'text-anchor="{anchor}"')
+    return f"  <text {' '.join(attrs)}>{escape(content)}</text>\n"
+
+
 def svg_doc(w: int, h: int, title: str, body: str) -> str:
     return (
         f'<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -66,16 +92,15 @@ def header_svg(w: int, title: str, subtitle: str) -> str:
     return (
         f'  <rect width="{w}" height="168" fill="{HEADER}"/>\n'
         f'  <rect y="168" width="{w}" height="8" fill="{GOLD}"/>\n'
-        f'  <text x="48" y="78" fill="{WHITE}" font-size="42" font-weight="600">'
-        f"{escape(title)}</text>\n"
-        f'  <text x="48" y="124" fill="{SUB}" font-size="22">{escape(subtitle)}</text>\n'
+        + text_el(48, 70, title, size=42, fill=WHITE, weight="600")
+        + text_el(48, 118, subtitle, size=22, fill=SUB)
     )
 
 
 def footer_svg(w: int, h: int) -> str:
     return (
         f'  <rect y="{h - 64}" width="{w}" height="64" fill="{HEADER}"/>\n'
-        f'  <text x="48" y="{h - 26}" fill="{SUB}" font-size="18">{escape(FOOT)}</text>\n'
+        + text_el(48, h - 32, FOOT, size=18, fill=SUB)
     )
 
 
@@ -89,42 +114,35 @@ def save(rel_png: str, markup: str) -> Path:
 def save_card(rel: str, title: str, subtitle: str, items: list[str], note: str | None) -> Path:
     w = 1080
     y = 208
-    rows: list[tuple[int, str, list[str]]] = []
+    rows: list[tuple[int, list[str]]] = []
     for i, item in enumerate(items, 1):
-        lines = wrap(item, 30)
-        rows.append((i, item, lines))
-        y += max(52, 16 + 38 * len(lines))
-    note_lines = wrap(note, 32) if note else []
+        lines = wrap(item, 31)
+        rows.append((i, lines))
+        y += max(58, 22 + 40 * len(lines))
+    note_lines = wrap(note, 34) if note else []
     if note:
-        y += 24 + 28 + 32 * len(note_lines)
+        y += 20 + 36 + 32 * len(note_lines)
     h = max(720, y + 100)
 
     parts = [header_svg(w, title, subtitle)]
     y = 208
-    for i, _item, lines in rows:
-        cy = y + 24
+    for i, lines in rows:
+        cy = y + 22
         parts.append(f'  <circle cx="66" cy="{cy}" r="18" fill="{HEADER}"/>\n')
-        parts.append(
-            f'  <text x="66" y="{cy + 1}" fill="{WHITE}" font-size="22" '
-            f'text-anchor="middle" dominant-baseline="middle">{i}</text>\n'
-        )
+        parts.append(text_el(66, cy, str(i), size=22, fill=WHITE, anchor="middle"))
         for j, line in enumerate(lines):
-            parts.append(
-                f'  <text x="104" y="{y + 10 + j * 38}" fill="{TEXT}" font-size="28">'
-                f"{escape(line)}</text>\n"
-            )
-        y += max(52, 16 + 38 * len(lines))
+            parts.append(text_el(104, cy + j * 40, line, size=28, fill=TEXT))
+        y += max(58, 22 + 40 * len(lines))
     if note:
-        box_h = 28 + 32 * len(note_lines)
+        box_h = 36 + 32 * max(0, len(note_lines) - 1) + 28
         parts.append(
             f'  <rect x="40" y="{y + 8}" width="{w - 80}" height="{box_h}" '
             f'rx="16" fill="{NOTE_BG}"/>\n'
         )
+        box_mid = y + 8 + box_h / 2
+        first_cy = box_mid - 16 * (len(note_lines) - 1)
         for j, line in enumerate(note_lines):
-            parts.append(
-                f'  <text x="64" y="{y + 36 + j * 32}" fill="{WARN}" font-size="24">'
-                f"{escape(line)}</text>\n"
-            )
+            parts.append(text_el(64, first_cy + j * 32, line, size=24, fill=WARN))
     parts.append(footer_svg(w, h))
     return save(rel, svg_doc(w, h, title, "".join(parts)))
 
@@ -142,27 +160,20 @@ def save_split(
     mid = w // 2
     top = 208
 
-    def col_lines(items: list[str], max_units: float) -> list[str]:
-        out: list[str] = []
-        for t in items:
-            wrapped = wrap("• " + t, max_units)
-            out.extend(wrapped)
-            out.append("")
-        return out
-
-    left_lines = col_lines(left, 16)
-    right_lines = col_lines(right, 16)
-    content_h = 96 + 40 * max(len(left_lines), len(right_lines))
-    box_bottom = top + max(520, content_h)
-    h = max(820, box_bottom + 96)
+    left_blocks = [wrap("• " + t, 17) for t in left]
+    right_blocks = [wrap("• " + t, 17) for t in right]
+    n_rows = max(len(left_blocks), len(right_blocks))
+    box_h = 112 + 56 * n_rows
+    box_bottom = top + box_h
+    h = max(780, box_bottom + 88)
 
     parts = [header_svg(w, title, subtitle)]
     parts.append(
-        f'  <rect x="36" y="{top}" width="{mid - 52}" height="{box_bottom - top}" '
+        f'  <rect x="36" y="{top}" width="{mid - 52}" height="{box_h}" '
         f'rx="20" fill="{WHITE}" stroke="{LINE}" stroke-width="2"/>\n'
     )
     parts.append(
-        f'  <rect x="{mid + 16}" y="{top}" width="{mid - 52}" height="{box_bottom - top}" '
+        f'  <rect x="{mid + 16}" y="{top}" width="{mid - 52}" height="{box_h}" '
         f'rx="20" fill="{WHITE}" stroke="{LINE}" stroke-width="2"/>\n'
     )
     parts.append(
@@ -172,30 +183,20 @@ def save_split(
         f'  <rect x="{mid + 32}" y="{top + 20}" width="{mid - 84}" height="52" '
         f'rx="12" fill="{WARN}"/>\n'
     )
-    parts.append(
-        f'  <text x="72" y="{top + 54}" fill="{WHITE}" font-size="26" font-weight="600">'
-        f"{escape(left_h)}</text>\n"
-    )
-    parts.append(
-        f'  <text x="{mid + 52}" y="{top + 54}" fill="{WHITE}" font-size="26" font-weight="600">'
-        f"{escape(right_h)}</text>\n"
-    )
+    pill_cy = top + 46
+    parts.append(text_el(72, pill_cy, left_h, size=26, fill=WHITE, weight="600"))
+    parts.append(text_el(mid + 52, pill_cy, right_h, size=26, fill=WHITE, weight="600"))
 
-    yy = top + 104
-    for line in left_lines:
-        if line:
-            parts.append(
-                f'  <text x="56" y="{yy}" fill="{TEXT}" font-size="24">{escape(line)}</text>\n'
-            )
-        yy += 36
-    yy = top + 104
-    for line in right_lines:
-        if line:
-            parts.append(
-                f'  <text x="{mid + 36}" y="{yy}" fill="{TEXT}" font-size="24">'
-                f"{escape(line)}</text>\n"
-            )
-        yy += 36
+    yy = top + 108
+    for block in left_blocks:
+        for j, line in enumerate(block):
+            parts.append(text_el(72, yy + j * 32, line, size=24, fill=TEXT))
+        yy += 56
+    yy = top + 108
+    for block in right_blocks:
+        for j, line in enumerate(block):
+            parts.append(text_el(mid + 52, yy + j * 32, line, size=24, fill=TEXT))
+        yy += 56
     parts.append(footer_svg(w, h))
     return save(rel, svg_doc(w, h, title, "".join(parts)))
 

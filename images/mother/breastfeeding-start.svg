@@ -6,25 +6,25 @@
   <rect width="1080" height="720" fill="#f7f4ee"/>
   <rect width="1080" height="168" fill="#0b5e60"/>
   <rect y="168" width="1080" height="8" fill="#e8a858"/>
-  <text x="48" y="78" fill="#ffffff" font-size="42" font-weight="600">母乳：媽媽角度</text>
-  <text x="48" y="124" fill="#d2e8e4" font-size="22">黃金首小時同上奶</text>
-  <circle cx="66" cy="232" r="18" fill="#0b5e60"/>
-  <text x="66" y="233" fill="#ffffff" font-size="22" text-anchor="middle" dominant-baseline="middle">1</text>
-  <text x="104" y="218" fill="#1c2a3a" font-size="28">產前學知識、參加健康院或醫院講座</text>
-  <circle cx="66" cy="286" r="18" fill="#0b5e60"/>
-  <text x="66" y="287" fill="#ffffff" font-size="22" text-anchor="middle" dominant-baseline="middle">2</text>
-  <text x="104" y="272" fill="#1c2a3a" font-size="28">出生後盡快肌膚相親，等 BB 食初乳</text>
-  <circle cx="66" cy="340" r="18" fill="#0b5e60"/>
-  <text x="66" y="341" fill="#ffffff" font-size="22" text-anchor="middle" dominant-baseline="middle">3</text>
-  <text x="104" y="326" fill="#1c2a3a" font-size="28">上奶前就學埋身，主動問姿勢</text>
-  <circle cx="66" cy="394" r="18" fill="#0b5e60"/>
-  <text x="66" y="395" fill="#ffffff" font-size="22" text-anchor="middle" dominant-baseline="middle">4</text>
-  <text x="104" y="380" fill="#1c2a3a" font-size="28">第 2–3 天谷奶正常；第 4 天未上奶要搵人</text>
-  <circle cx="66" cy="448" r="18" fill="#0b5e60"/>
-  <text x="66" y="449" fill="#ffffff" font-size="22" text-anchor="middle" dominant-baseline="middle">5</text>
-  <text x="104" y="434" fill="#1c2a3a" font-size="28">唔好過度擠奶，唔好大力按塞奶硬塊</text>
-  <rect x="40" y="486" width="1000" height="60" rx="16" fill="#ffece6"/>
-  <text x="64" y="514" fill="#9a302a" font-size="24">乳腺炎：紅腫熱痛或體温超過 38.5°C 盡快求診</text>
+  <text x="48" y="70" dy="15" fill="#ffffff" font-size="42" font-weight="600">母乳：媽媽角度</text>
+  <text x="48" y="118" dy="8" fill="#d2e8e4" font-size="22">黃金首小時同上奶</text>
+  <circle cx="66" cy="230" r="18" fill="#0b5e60"/>
+  <text x="66" y="230" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">1</text>
+  <text x="104" y="230" dy="10" fill="#1c2a3a" font-size="28">產前學知識、參加健康院或醫院講座</text>
+  <circle cx="66" cy="292" r="18" fill="#0b5e60"/>
+  <text x="66" y="292" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">2</text>
+  <text x="104" y="292" dy="10" fill="#1c2a3a" font-size="28">出生後盡快肌膚相親，等 BB 食初乳</text>
+  <circle cx="66" cy="354" r="18" fill="#0b5e60"/>
+  <text x="66" y="354" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">3</text>
+  <text x="104" y="354" dy="10" fill="#1c2a3a" font-size="28">上奶前就學埋身，主動問姿勢</text>
+  <circle cx="66" cy="416" r="18" fill="#0b5e60"/>
+  <text x="66" y="416" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">4</text>
+  <text x="104" y="416" dy="10" fill="#1c2a3a" font-size="28">第 2–3 天谷奶正常；第 4 天未上奶要搵人</text>
+  <circle cx="66" cy="478" r="18" fill="#0b5e60"/>
+  <text x="66" y="478" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">5</text>
+  <text x="104" y="478" dy="10" fill="#1c2a3a" font-size="28">唔好過度擠奶，唔好大力按塞奶硬塊</text>
+  <rect x="40" y="526" width="1000" height="64" rx="16" fill="#ffece6"/>
+  <text x="64" y="558.0" dy="9" fill="#9a302a" font-size="24">乳腺炎：紅腫熱痛或體温超過 38.5°C 盡快求診</text>
   <rect y="656" width="1080" height="64" fill="#0b5e60"/>
-  <text x="48" y="694" fill="#d2e8e4" font-size="18">衞生署家庭健康服務網頁文字摘要　·　唔構成醫療建議</text>
+  <text x="48" y="688" dy="6" fill="#d2e8e4" font-size="18">衞生署家庭健康服務網頁文字摘要　·　唔構成醫療建議</text>
 </svg>
