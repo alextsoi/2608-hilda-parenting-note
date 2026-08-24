@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 720" width="100%" role="img" xml:lang="zh-Hant-HK">
+  <title>母嬰健康院</title>
+  <desc>衞生署家庭健康服務網頁文字摘要　·　唔構成醫療建議</desc>
+  <style>text{font-family:"PingFang HK","Heiti TC","Noto Sans TC","Hiragino Sans CNS",sans-serif}</style>
+  <rect width="1080" height="720" fill="#f7f4ee"/>
+  <rect width="1080" height="168" fill="#0b5e60"/>
+  <rect y="168" width="1080" height="8" fill="#e8a858"/>
+  <text x="48" y="78" fill="#ffffff" font-size="42" font-weight="600">母嬰健康院</text>
+  <text x="48" y="124" fill="#d2e8e4" font-size="22">時間、地址、電話</text>
+  <circle cx="66" cy="232" r="18" fill="#0b5e60"/>
+  <text x="66" y="233" fill="#ffffff" font-size="22" text-anchor="middle" dominant-baseline="middle">1</text>
+  <text x="104" y="218" fill="#1c2a3a" font-size="28">各區健康院服務時間唔同，去之前查網</text>
+  <circle cx="66" cy="286" r="18" fill="#0b5e60"/>
+  <text x="66" y="287" fill="#ffffff" font-size="22" text-anchor="middle" dominant-baseline="middle">2</text>
+  <text x="104" y="272" fill="#1c2a3a" font-size="28">首次帶齊證明文件同出院紙</text>
+  <circle cx="66" cy="340" r="18" fill="#0b5e60"/>
+  <text x="66" y="341" fill="#ffffff" font-size="22" text-anchor="middle" dominant-baseline="middle">3</text>
+  <text x="104" y="326" fill="#1c2a3a" font-size="28">產後、兒童、家庭計劃、子宮頸或分開預約</text>
+  <circle cx="66" cy="394" r="18" fill="#0b5e60"/>
+  <text x="66" y="395" fill="#ffffff" font-size="22" text-anchor="middle" dominant-baseline="middle">4</text>
+  <text x="104" y="380" fill="#1c2a3a" font-size="28">熱線 2112 9900</text>
+  <circle cx="66" cy="448" r="18" fill="#0b5e60"/>
+  <text x="66" y="449" fill="#ffffff" font-size="22" text-anchor="middle" dominant-baseline="middle">5</text>
+  <text x="104" y="434" fill="#1c2a3a" font-size="28">完整名單見本頁表格</text>
+  <rect y="656" width="1080" height="64" fill="#0b5e60"/>
+  <text x="48" y="694" fill="#d2e8e4" font-size="18">衞生署家庭健康服務網頁文字摘要　·　唔構成醫療建議</text>
+</svg>
