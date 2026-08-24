@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" role="img" xml:lang="zh-Hant-HK">
+  <title>初生黑白圖卡：大格仔</title>
+  <desc>四乘四大格仔，格夠大，避免幼細棋盤睇唔清。</desc>
+  <rect width="800" height="800" fill="#ffffff"/>
+  <rect x="0" y="0" width="200" height="200" fill="#000000"/>
+  <rect x="400" y="0" width="200" height="200" fill="#000000"/>
+  <rect x="200" y="200" width="200" height="200" fill="#000000"/>
+  <rect x="600" y="200" width="200" height="200" fill="#000000"/>
+  <rect x="0" y="400" width="200" height="200" fill="#000000"/>
+  <rect x="400" y="400" width="200" height="200" fill="#000000"/>
+  <rect x="200" y="600" width="200" height="200" fill="#000000"/>
+  <rect x="600" y="600" width="200" height="200" fill="#000000"/>
+</svg>

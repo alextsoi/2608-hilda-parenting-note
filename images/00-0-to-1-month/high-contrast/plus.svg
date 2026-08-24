@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" role="img" xml:lang="zh-Hant-HK">
+  <title>初生黑白圖卡：粗十字</title>
+  <desc>粗橫直帶組成十字，形狀簡單、黑白交界長。</desc>
+  <rect width="800" height="800" fill="#ffffff"/>
+  <rect x="280" y="40" width="240" height="720" fill="#000000"/>
+  <rect x="40" y="280" width="720" height="240" fill="#000000"/>
+</svg>

@@ -22,6 +22,7 @@
   - [求醫信號](/00-0-to-1-month/health-warning-signs.md)
   - [篩查](/00-0-to-1-month/screening.md)
   - [發展](/00-0-to-1-month/development.md)
+  - [黑白對比圖案](/00-0-to-1-month/high-contrast.md)
   - [安全](/00-0-to-1-month/safety.md)
   - [口腔](/00-0-to-1-month/oral.md)
   - [疫苗](/00-0-to-1-month/vaccines.md)

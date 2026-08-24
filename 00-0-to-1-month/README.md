@@ -35,3 +35,4 @@
 | 奶瓶／配方 | [bottle-feeding.md](./bottle-feeding.md) |
 | 滿月發展 | [development.md](./development.md) |
 | 聽力、視力警示 | [development.md](./development.md) |
+| 黑白對比圖卡（可列印） | [high-contrast.md](./high-contrast.md) |
