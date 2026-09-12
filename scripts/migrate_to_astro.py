@@ -155,7 +155,7 @@ def parse_sidebar(sidebar_path: Path) -> list[dict]:
             if match and match.group(2) == "/":
                 continue
             label = line[2:].strip()
-            current = {"label": label, "items": []}
+            current = {"label": label, "items": [], "collapsed": True}
             groups.append(current)
 
     return groups

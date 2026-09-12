@@ -21,6 +21,7 @@ export default defineConfig({
 			sidebar: 			[
 			  {
 			    "label": "媽媽（產後）",
+			    "collapsed": true,
 			    "items": [
 			      {
 			        "label": "概覽",
@@ -66,6 +67,7 @@ export default defineConfig({
 			  },
 			  {
 			    "label": "居家餐單",
+			    "collapsed": true,
 			    "items": [
 			      {
 			        "label": "雙人月子餐",
@@ -75,6 +77,7 @@ export default defineConfig({
 			  },
 			  {
 			    "label": "初生至一個月",
+			    "collapsed": true,
 			    "items": [
 			      {
 			        "label": "概覽",
@@ -136,6 +139,7 @@ export default defineConfig({
 			  },
 			  {
 			    "label": "一至十二個月",
+			    "collapsed": true,
 			    "items": [
 			      {
 			        "label": "概覽",
@@ -177,6 +181,7 @@ export default defineConfig({
 			  },
 			  {
 			    "label": "一歲至三歲",
+			    "collapsed": true,
 			    "items": [
 			      {
 			        "label": "概覽",
@@ -210,6 +215,7 @@ export default defineConfig({
 			  },
 			  {
 			    "label": "三歲至六歲",
+			    "collapsed": true,
 			    "items": [
 			      {
 			        "label": "概覽",
@@ -243,6 +249,7 @@ export default defineConfig({
 			  },
 			  {
 			    "label": "資源",
+			    "collapsed": true,
 			    "items": [
 			      {
 			        "label": "概覽",
