@@ -12,6 +12,9 @@
   - [產後運動](/mother/postnatal-exercise.md)
   - [母乳（媽媽角度）](/mother/breastfeeding.md)
 
+- 居家餐單
+  - [雙人月子餐](/meal.md)
+
 - 初生至一個月
   - [概覽](/00-0-to-1-month/README.md)
   - [親職／社交情緒](/00-0-to-1-month/parenting.md)

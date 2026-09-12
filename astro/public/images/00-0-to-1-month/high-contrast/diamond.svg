@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" role="img" xml:lang="zh-Hant-HK">
+  <title>初生黑白圖卡：大菱形</title>
+  <desc>單一大型幾何形，邊緣長、對比強。</desc>
+  <rect width="800" height="800" fill="#ffffff"/>
+  <polygon points="400,40 760,400 400,760 40,400" fill="#000000"/>
+</svg>

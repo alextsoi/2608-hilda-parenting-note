@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 780" width="100%" role="img" xml:lang="zh-Hant-HK">
+  <title>肚餓信號</title>
+  <desc>衞生署家庭健康服務網頁文字摘要　·　唔構成醫療建議</desc>
+  <style>text{font-family:"PingFang HK","Heiti TC","Noto Sans TC","Hiragino Sans CNS",sans-serif}</style>
+  <rect width="1080" height="780" fill="#f7f4ee"/>
+  <rect width="1080" height="168" fill="#0b5e60"/>
+  <rect y="168" width="1080" height="8" fill="#e8a858"/>
+  <text x="48" y="70" dy="15" fill="#ffffff" font-size="42" font-weight="600">肚餓信號</text>
+  <text x="48" y="118" dy="8" fill="#d2e8e4" font-size="22">先安撫，後餵哺</text>
+  <rect x="36" y="208" width="488" height="336" rx="20" fill="#ffffff" stroke="#dcd6cc" stroke-width="2"/>
+  <rect x="556" y="208" width="488" height="336" rx="20" fill="#ffffff" stroke="#dcd6cc" stroke-width="2"/>
+  <rect x="52" y="228" width="456" height="52" rx="12" fill="#246e56"/>
+  <rect x="572" y="228" width="456" height="52" rx="12" fill="#9a302a"/>
+  <text x="72" y="254" dy="9" fill="#ffffff" font-size="26" font-weight="600">早期（宜餵）</text>
+  <text x="592" y="254" dy="9" fill="#ffffff" font-size="26" font-weight="600">較遲（先安撫）</text>
+  <text x="72" y="316" dy="9" fill="#1c2a3a" font-size="24">• 轉頭覓食</text>
+  <text x="72" y="372" dy="9" fill="#1c2a3a" font-size="24">• 嘴巴張開</text>
+  <text x="72" y="428" dy="9" fill="#1c2a3a" font-size="24">• 身體躍躍欲動</text>
+  <text x="72" y="484" dy="9" fill="#1c2a3a" font-size="24">• 伸手入口</text>
+  <text x="592" y="316" dy="9" fill="#1c2a3a" font-size="24">• 大聲哭鬧</text>
+  <text x="592" y="372" dy="9" fill="#1c2a3a" font-size="24">• 煩躁扭動</text>
+  <text x="592" y="428" dy="9" fill="#1c2a3a" font-size="24">• 滿面通紅</text>
+  <text x="592" y="484" dy="9" fill="#1c2a3a" font-size="24">• 安撫後再餵</text>
+  <rect y="716" width="1080" height="64" fill="#0b5e60"/>
+  <text x="48" y="748" dy="6" fill="#d2e8e4" font-size="18">衞生署家庭健康服務網頁文字摘要　·　唔構成醫療建議</text>
+</svg>

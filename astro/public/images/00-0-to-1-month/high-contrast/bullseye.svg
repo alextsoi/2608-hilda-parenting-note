@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" role="img" xml:lang="zh-Hant-HK">
+  <title>初生黑白圖卡：同心圓</title>
+  <desc>粗環同心圓，黑白交界清楚。</desc>
+  <rect width="800" height="800" fill="#ffffff"/>
+  <circle cx="400" cy="400" r="380" fill="#000000"/>
+  <circle cx="400" cy="400" r="285" fill="#ffffff"/>
+  <circle cx="400" cy="400" r="190" fill="#000000"/>
+  <circle cx="400" cy="400" r="95" fill="#ffffff"/>
+</svg>

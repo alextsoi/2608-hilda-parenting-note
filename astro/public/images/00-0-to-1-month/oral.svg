@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 720" width="100%" role="img" xml:lang="zh-Hant-HK">
+  <title>初生口腔</title>
+  <desc>衞生署家庭健康服務網頁文字摘要　·　唔構成醫療建議</desc>
+  <style>text{font-family:"PingFang HK","Heiti TC","Noto Sans TC","Hiragino Sans CNS",sans-serif}</style>
+  <rect width="1080" height="720" fill="#f7f4ee"/>
+  <rect width="1080" height="168" fill="#0b5e60"/>
+  <rect y="168" width="1080" height="8" fill="#e8a858"/>
+  <text x="48" y="70" dy="15" fill="#ffffff" font-size="42" font-weight="600">初生口腔</text>
+  <text x="48" y="118" dy="8" fill="#d2e8e4" font-size="22">未出牙都要護理</text>
+  <circle cx="66" cy="230" r="18" fill="#0b5e60"/>
+  <text x="66" y="230" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">1</text>
+  <text x="104" y="230" dy="10" fill="#1c2a3a" font-size="28">清潔口腔黏膜，養成習慣</text>
+  <circle cx="66" cy="292" r="18" fill="#0b5e60"/>
+  <text x="66" y="292" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">2</text>
+  <text x="104" y="292" dy="10" fill="#1c2a3a" font-size="28">唔好含住奶瓶瞓（出牙後易蛀）</text>
+  <circle cx="66" cy="354" r="18" fill="#0b5e60"/>
+  <text x="66" y="354" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">3</text>
+  <text x="104" y="354" dy="10" fill="#1c2a3a" font-size="28">衞生署「牙齒俱樂部」有六歲以下系列</text>
+  <circle cx="66" cy="416" r="18" fill="#0b5e60"/>
+  <text x="66" y="416" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">4</text>
+  <text x="104" y="416" dy="10" fill="#1c2a3a" font-size="28">出牙後再用紗布或指套刷清潔</text>
+  <circle cx="66" cy="478" r="18" fill="#0b5e60"/>
+  <text x="66" y="478" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">5</text>
+  <text x="104" y="478" dy="10" fill="#1c2a3a" font-size="28">詳情見官方口腔健康目錄</text>
+  <rect y="656" width="1080" height="64" fill="#0b5e60"/>
+  <text x="48" y="688" dy="6" fill="#d2e8e4" font-size="18">衞生署家庭健康服務網頁文字摘要　·　唔構成醫療建議</text>
+</svg>

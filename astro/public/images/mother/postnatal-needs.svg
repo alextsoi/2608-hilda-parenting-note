@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 720" width="100%" role="img" xml:lang="zh-Hant-HK">
+  <title>產後母親的需要</title>
+  <desc>衞生署家庭健康服務網頁文字摘要　·　唔構成醫療建議</desc>
+  <style>text{font-family:"PingFang HK","Heiti TC","Noto Sans TC","Hiragino Sans CNS",sans-serif}</style>
+  <rect width="1080" height="720" fill="#f7f4ee"/>
+  <rect width="1080" height="168" fill="#0b5e60"/>
+  <rect y="168" width="1080" height="8" fill="#e8a858"/>
+  <text x="48" y="70" dy="15" fill="#ffffff" font-size="42" font-weight="600">產後母親的需要</text>
+  <text x="48" y="118" dy="8" fill="#d2e8e4" font-size="22">全家都要睇住媽媽</text>
+  <circle cx="66" cy="230" r="18" fill="#0b5e60"/>
+  <text x="66" y="230" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">1</text>
+  <text x="104" y="230" dy="10" fill="#1c2a3a" font-size="28">最需要：充足休息</text>
+  <circle cx="66" cy="292" r="18" fill="#0b5e60"/>
+  <text x="66" y="292" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">2</text>
+  <text x="104" y="292" dy="10" fill="#1c2a3a" font-size="28">實際幫忙：家務、湊仔、陪月或家務助理</text>
+  <circle cx="66" cy="354" r="18" fill="#0b5e60"/>
+  <text x="66" y="354" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">3</text>
+  <text x="104" y="354" dy="10" fill="#1c2a3a" font-size="28">心理支持：關懷、體諒、聆聽</text>
+  <circle cx="66" cy="416" r="18" fill="#0b5e60"/>
+  <text x="66" y="416" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">4</text>
+  <text x="104" y="416" dy="10" fill="#1c2a3a" font-size="28">約一半婦女產後 3–5 天情緒低落</text>
+  <circle cx="66" cy="478" r="18" fill="#0b5e60"/>
+  <text x="66" y="478" dy="8" fill="#ffffff" font-size="22" text-anchor="middle">5</text>
+  <text x="104" y="478" dy="10" fill="#1c2a3a" font-size="28">嚴重或持續就要搵醫護</text>
+  <rect y="656" width="1080" height="64" fill="#0b5e60"/>
+  <text x="48" y="688" dy="6" fill="#d2e8e4" font-size="18">衞生署家庭健康服務網頁文字摘要　·　唔構成醫療建議</text>
+</svg>

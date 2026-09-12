@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" role="img" xml:lang="zh-Hant-HK">
+  <title>初生黑白圖卡：粗橫間</title>
+  <desc>五條粗橫間，對比強、線條夠闊，初生較易睇到黑白交界。</desc>
+  <rect width="800" height="800" fill="#ffffff"/>
+  <rect y="0" width="800" height="160" fill="#000000"/>
+  <rect y="320" width="800" height="160" fill="#000000"/>
+  <rect y="640" width="800" height="160" fill="#000000"/>
+</svg>
