@@ -51,6 +51,16 @@ npm run preview
 
 然後開 http://localhost:4321 試搜尋（例如「黃疸」「母乳」「疫苗」）。
 
+## Google Analytics 4
+
+GA4 property：**G-GKZ6EBTJB7**（已設為預設，deploy 後會自動載入 gtag.js）。
+
+如需改用另一個 property，設 environment variable `PUBLIC_GA_MEASUREMENT_ID` 覆寫（本機可複製 `.env.example` → `.env`）。
+
+**Cloudflare Pages**（可選覆寫）：Project → Settings → Environment variables → `PUBLIC_GA_MEASUREMENT_ID`
+
+Redeploy 後用 GA4 **Realtime** 報表確認 page view。站內換頁會經 `astro:page-load` 再送 page view。
+
 ## 重新遷移內容
 
 改完根目錄 Markdown 後：

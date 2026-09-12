@@ -2,8 +2,11 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import starlight from '@astrojs/starlight';
+import { DEFAULT_GA_MEASUREMENT_ID, getGa4Head } from './src/analytics/ga4.ts';
 
 const site = process.env.SITE ?? 'https://hilda.lhl.hk';
+const gaMeasurementId =
+	process.env.PUBLIC_GA_MEASUREMENT_ID ?? DEFAULT_GA_MEASUREMENT_ID;
 
 // https://astro.build/config
 export default defineConfig({
@@ -318,6 +321,7 @@ export default defineConfig({
 			    ]
 			  }
 			],
+			head: getGa4Head(gaMeasurementId),
 		}),
 		sitemap(),
 	],

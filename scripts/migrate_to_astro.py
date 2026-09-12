@@ -191,8 +191,11 @@ def write_astro_config(sidebar: list[dict]) -> None:
 import {{ defineConfig }} from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import starlight from '@astrojs/starlight';
+import {{ DEFAULT_GA_MEASUREMENT_ID, getGa4Head }} from './src/analytics/ga4.ts';
 
 const site = process.env.SITE ?? '{SITE_URL}';
+const gaMeasurementId =
+\tprocess.env.PUBLIC_GA_MEASUREMENT_ID ?? DEFAULT_GA_MEASUREMENT_ID;
 
 // https://astro.build/config
 export default defineConfig({{
@@ -208,6 +211,7 @@ export default defineConfig({{
 \t\t\t\t}},
 \t\t\t}},
 \t\t\tsidebar: {sidebar_json},
+\t\t\thead: getGa4Head(gaMeasurementId),
 \t\t}}),
 \t\tsitemap(),
 \t],
